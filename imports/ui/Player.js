@@ -5,11 +5,12 @@ import PropTypes from 'prop-types';
 export default class Player extends Component{
     render(){
         return (
-            <p>{this.props.player.name} has {this.props.player.score} point(s)
-                <button onClick={()=>Players.update({_id:this.props.player._id},{$inc: { score: 1 }})}>+1</button>
-                <button onClick={()=>Players.update({_id:this.props.player._id},{$inc: { score: -1 }})}>-1</button>      
-                <button onClick={()=>Players.remove({_id:this.props.player._id})}>X</button>
-            </p> 
+            <div className="item">
+                <p>{this.props.player.name} has {this.props.player.score} point(s)</p>
+                <button className="button button--round" onClick={()=>Players.update({_id:this.props.player._id},{$inc: { score: 1 }})}>+1</button>
+                <button className="button button--round" onClick={()=>Players.update({_id:this.props.player._id},{$inc: { score: -1 }})}>-1</button>      
+                <button className="button button--round" onClick={()=>Players.remove({_id:this.props.player._id})}>X</button>
+            </div>
         );
     }
 }
