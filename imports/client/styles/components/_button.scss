@@ -1,12 +1,13 @@
 .button{
     color: #555555;
-    background: white;
+    background: transparent;
     cursor: pointer;
     font-weight: 600;
     margin-left: 1.3rem;
     outline: none;
     padding: 1.3rem;
     border: 1px solid #555555;
+    line-height: 1;
     transition: background .2s ease, transform .2s ease;
     &:hover, &:focus{
         background: #e8e8e8;

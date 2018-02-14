@@ -1,3 +1,7 @@
+//Variable
+$green-alt:darken(#90ee90,15%);
+$blue-alt:darken(#add8e6,15%);
+$red-alt:darken(#f08080,15%);
 
 *{
     margin: 0;
@@ -16,11 +20,14 @@ h1{
     font-weight: 300;
     font-size: 2.4rem;
 }
-
+input, button, select{
+    font-size: 1.3rem;
+}
 
 @import './components/titleBar';
 @import './components/wrapper';
 @import './components/item';
 @import './components/button';
 @import './components/player';
+@import './components/form';
 
