@@ -4,6 +4,7 @@ export default class AddPlayer extends Component {
 
      handleSubmit(e) {
         let playerName = e.target.playerName.value;
+        console.log(playerName);
         e.preventDefault();
         if (playerName) {
           e.target.playerName.value = ''
@@ -18,7 +19,7 @@ export default class AddPlayer extends Component {
             <div className="item">
                 <form className="form" onSubmit={this.handleSubmit.bind(this)}>
                     <input className="form__input" type="text" name="playerName" placeholder="Player Name"/>
-                    <button className="button">Add Player</button>
+                    <button  className="button">Add Player</button>
                 </form>
             </div>
         );

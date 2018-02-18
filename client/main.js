@@ -7,6 +7,7 @@ import {Tracker} from "meteor/tracker";
 
 Meteor.startup(() => {
   Tracker.autorun(() => {
+    
     ReactDOM.render(<App />, document.getElementById('app'));
   });
 });
